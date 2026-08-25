@@ -6,7 +6,7 @@ namespace RiverBooks.Books
     {
         public static void MapBookEndpoints(this WebApplication app)
         {
-            var group = app.MapGet("/api/Book", (IBookService bookService) =>
+            var group = app.MapGet("/books", (IBookService bookService) =>
             {
                 return bookService.ListBooks();
             });
