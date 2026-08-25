@@ -1,3 +1,5 @@
+using RiverBooks.Books;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -19,5 +21,8 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+//Map Module Endpoints
+app.MapBookEndpoints();
 
 app.Run();
