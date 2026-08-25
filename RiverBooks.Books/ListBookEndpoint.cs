@@ -9,7 +9,7 @@ namespace RiverBooks.Books
 
         public override void Configure()
         {
-            Get("/api/books");
+            Get("/books");
             AllowAnonymous();
         }
 

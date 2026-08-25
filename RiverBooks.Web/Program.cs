@@ -28,7 +28,4 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-//Map Module Endpoints
-app.MapBookEndpoints();
-
 app.Run();
