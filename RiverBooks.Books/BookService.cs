@@ -6,7 +6,7 @@ namespace RiverBooks.Books
 {
     internal class BookService : IBookService
     {
-        public IEnumerable<BookDto> ListBooks()
+        public List<BookDto> ListBooks()
         {
             return [
                 new BookDto (Guid.NewGuid(), "The Great Gatsby", "F. Scott Fitzgerald" ),

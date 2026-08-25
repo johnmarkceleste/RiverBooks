@@ -2,6 +2,6 @@
 {
     internal interface IBookService
     {
-        IEnumerable<BookDto> ListBooks();
+        List<BookDto> ListBooks();
     }
 }
