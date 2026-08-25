@@ -1,1 +1,4 @@
-<Solution />
+<Solution>
+  <Project Path="RiverBooks.Books/RiverBooks.Books.csproj" Id="a228f7ed-0fdb-4072-b014-32483c5acf81" />
+  <Project Path="RiverBooks.Web/RiverBooks.Web.csproj" Id="ad35d051-a5f5-48b2-ab02-6b70b03caac2" />
+</Solution>
