@@ -1,4 +1,6 @@
-﻿namespace RiverBooks.Books
+﻿using Ardalis.GuardClauses;
+
+namespace RiverBooks.Books
 {
   internal class Book
   {
@@ -9,15 +11,15 @@
 
     internal Book(Guid id, string title, string author, decimal price)
     {
-      Id = id;
-      Title = title;
-      Author = author;
-      Price = price;
+      Id = Guard.Against.Default(id);
+      Title = Guard.Against.NullOrEmpty(title);
+      Author = Guard.Against.NullOrEmpty(author);
+      Price = Guard.Against.Negative(price);
     }
 
     internal void UpdatePrice(decimal newPrice)
     {
-      Price = newPrice;
+      Price = Guard.Against.Negative(newPrice);
     }
   }
 }
