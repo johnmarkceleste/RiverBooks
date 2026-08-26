@@ -1,7 +1,11 @@
 ﻿namespace RiverBooks.Books
 {
-    internal interface IBookService
-    {
-        List<BookDto> ListBooks();
-    }
+  internal interface IBookService
+  {
+    Task<List<BookDto>> ListBooksAsync();
+    Task<BookDto> GetBookByIdAsync(Guid id);
+    Task CreateBookAsync(BookDto book);
+    Task DeleteBookAsync(Guid id);
+    Task UpdateBookPriceAsync(Guid bookId, decimal newPrice);
+  }
 }

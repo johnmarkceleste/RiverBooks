@@ -1,4 +1,4 @@
-using FastEndpoints;
+﻿using FastEndpoints;
 using RiverBooks.Books;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -23,7 +23,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseFastEndpoints();
+app.UseFastEndpoints(); 
 app.UseAuthorization();
 
 app.MapControllers();

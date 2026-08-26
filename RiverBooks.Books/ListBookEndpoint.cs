@@ -15,7 +15,7 @@ namespace RiverBooks.Books
 
         public override async Task HandleAsync(CancellationToken ct = default)
         {
-            var books = _bookService.ListBooks();
+            var books = await _bookService.ListBooksAsync();
 
             await SendAsync(new ListBooksResponse()
             {
